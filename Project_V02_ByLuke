@@ -219,7 +219,37 @@ void nighttime() {
         printf("On the outside, you seem to be cool and collected; but on the inside, fear, anxiety, and panic have completely taken over your soul. You eventually fall alseep, but it past midnight by the time you do.\n");
     }
     else {
-        printf(""); }      
+        printf("You get in your car and you drive to the nearest bar. You are still bothered by the fight you just had with Sara, but you hope that you can wash it off with a few drinks.\n"); 
+        printf("The bartender asks you what you want. What do you choose?\n");
+        scanf("%c", &drink);
+        printf("You start to sip your %c, and you feel a sense of frustration at the thought of a life without your girlfriend and your apartment. You want this moment to wash away forever. You gradually start to fall into the pit        of madness. Do you take another shot? (1 = yes) (0 = no)\n");
+        for (x==1; x!=0; y++) {
+          printf("Do you want to take a shot (1=yes; 0=no)?");
+          scanf("%d", &x); 
+          if (y >= 15) {
+            printf("Everybody at the bar notices how intoxicated you are as you yell at the bartender for your 15th shot. Your face is full of sweat, you're numb of all senses, and you have completely submerged into a state of                madness that you can no longer escape.\n.");
+            printf("The bartender refuses to adheer to your demand, but you keep screaming at him to give it to you. Then, the bouncer grabs you by the collar, and throws you out.\n");
+            printf("You are on the ground continuing to hallucinate. As you lie there, covered in mud and grime, you never would have thought that alcohol poisoning would be the way you go.\n");
+            printf("Suddenly, you fall into a deep sleep, and never wake up again.\n");
+          }
+          else if (y >= 5 && y < 15) {
+            printf("As you decide to leave the bar, you are struck with the decision of getting in your car and driving home or walking home.\n");
+            printf("You know you had a little more than you should have and driving may not be the best option but it is very late and walking home could be dangerous...What do you do? 1 = car, 0 = walk\n");
+            scanf("%d", &z);
+            if (z == 1)
+            {
+              printf("You get into your car and make the poor choice of driving. You make it around the corner and you start thinking of Sara and what you could have said. You suddenly look up and see a tree 10ft ahead.\n");
+              printf("Without enough time to turn out of the way, you crash into the tree and go through the windshield because you forgot to put your seatbelt on.");
+            }
+            else if (z == 0)
+            {
+              printf("You begin the walk home. While on the way home you contemplate how you could have handled things better with Sara and how you can make things right and move forward.\n");
+              printf("You make it home safe and sound and fall into a deep sleep\n");
+            }
+          printf("You took %d shots.", y);
+        }       
+    }
+              
         
        
 

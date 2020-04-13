@@ -9,29 +9,7 @@ Date Published: April 8th, 2020
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-//Beginning Function
-void beginning();
-
-//Functions relating to multiplayer game
-void modelH();
-
-//Functions relating to single player game
-void singleH();
-
-//Locations
-void warehouse();
-void nighttime();
-
-//Functions relating to your apartment
-void home();
-void christopher();
-
-//Ending Functions
-void goodEnding();
-void death();
-void caught();
-void decentEnding();
+#include "CS125_Project.h"
 
 void death() {
     FILE *file;
